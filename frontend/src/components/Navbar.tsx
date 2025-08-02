@@ -39,13 +39,13 @@ export const Navbar = () => {
           id="navbar-default"
         >
           <Button
-            className="bg-transparent mx-4 hover:bg-black w-[50%]"
+            className="bg-transparent mx-4 hover:bg-black w-full md:w-[50%] py-3"
             onClick={() => navigate("/simulation")}
           >
             Simulation
           </Button>
           <Button
-            className="bg-transparent mx-4 hover:bg-black w-[50%]"
+            className="bg-transparent mx-4 hover:bg-black w-full md:w-[50%] py-3"
             onClick={() => navigate("/game")}
           >
             Game

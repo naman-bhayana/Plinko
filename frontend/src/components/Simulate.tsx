@@ -61,8 +61,14 @@ export const Simulate = () => {
   }, [canvasRef]);
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <canvas ref={canvasRef} width="800" height="800"></canvas>
+    <div className="flex flex-col items-center justify-center w-full">
+      <canvas 
+        ref={canvasRef} 
+        width="800" 
+        height="800"
+        className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] h-auto"
+        style={{ aspectRatio: '1/1' }}
+      ></canvas>
     </div>
   );
 };

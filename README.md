@@ -101,7 +101,7 @@ plinkoo/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/naman-bhayana/Plinko.git
    cd plinkoo
    ```
 
@@ -137,31 +137,7 @@ plinkoo/
 3. **Open in Browser**
    Navigate to `http://localhost:5173` to play the game!
 
-## 🚀 Deployment
 
-### Render Deployment (Recommended)
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-
-2. **Deploy on Render**
-   - Connect your GitHub repository to Render
-   - Create two services:
-     - **Backend**: Web Service (Node.js)
-     - **Frontend**: Static Site (React build)
-
-3. **Environment Variables**
-   Set `VITE_API_URL` to your backend service URL
-
-### Alternative Platforms
-- **Vercel**: Frontend deployment
-- **Netlify**: Frontend deployment
-- **Railway**: Backend deployment
-- **Heroku**: Full-stack deployment
 
 ## 🎨 Customization
 

@@ -62,8 +62,8 @@ export function Home() {
   }, [canvasRef]);
 
   return (
-    <div className="">
-      <div className="flex flex-col lg:flex-row  items-center justify-between ">
+    <div className="min-h-screen">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 p-4 md:p-8">
         <Simulate />
         <Quotes />
       </div>
