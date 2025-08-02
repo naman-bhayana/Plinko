@@ -4,7 +4,7 @@ A modern, interactive Plinko game built with React, TypeScript, and Node.js. Dro
 
 ## 🌟 Live Demo
 
-**🚀 Live Link:** [Coming Soon - Deploy to Render/Vercel]
+**🚀 Live Link:** [https://plinko-frontend.onrender.com](https://plinko-frontend.onrender.com)
 
 ## 🎮 About the Game
 
