@@ -57,9 +57,9 @@ export function Simulation() {
   }, [canvasRef]);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen p-4">
-      <div className="flex mx-4 md:mx-8 lg:mx-16 flex-col justify-center pt-6 lg:pt-10 lg:w-1/2 mb-6 lg:mb-0">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Simulation Data</h2>
+    <div className="flex flex-col lg:flex-row items-stretch min-h-screen p-4">
+      <div className="flex flex-col justify-center lg:w-1/2 mb-6 lg:mb-0">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white text-center lg:text-left">Simulation Data</h2>
         <div className="bg-gray-800 p-4 rounded-lg max-h-[50vh] lg:max-h-[70vh] overflow-y-auto">
           <pre className="text-xs md:text-sm text-gray-300">
             {JSON.stringify(outputs, null, 2)}
@@ -67,7 +67,7 @@ export function Simulation() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center lg:w-1/2">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Plinko Simulation</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white text-center">Plinko Simulation</h2>
         <canvas 
           ref={canvasRef} 
           width="800" 
