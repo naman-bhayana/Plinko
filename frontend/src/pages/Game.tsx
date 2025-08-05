@@ -7,7 +7,6 @@ import { baseURL } from "../utils";
 export function Game() {
   const [ballManager, setBallManager] = useState<BallManager>();
   const [isFirstBall, setIsFirstBall] = useState(true);
-  const [isLoading, setIsLoading] = useState(false);
   const canvasRef = useRef<any>();
 
   useEffect(() => {
@@ -20,7 +19,6 @@ export function Game() {
   }, [canvasRef]);
 
   const handleAddBall = async () => {
-    setIsLoading(true);
     try {
       const response = await axios.post(`${baseURL}/game`, {
         data: 1,
@@ -33,8 +31,6 @@ export function Game() {
       }
     } catch (error) {
       console.error("Error adding ball:", error);
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -52,9 +48,8 @@ export function Game() {
           <Button
             className="px-6 md:px-8 py-3 md:py-4 text-base md:text-lg bg-green-600 hover:bg-green-700"
             onClick={handleAddBall}
-            disabled={isLoading}
           >
-            {isLoading ? "Adding Ball..." : "Add Ball"}
+            Add Ball
           </Button>
           
           {isFirstBall && (
